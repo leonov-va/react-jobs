@@ -1,13 +1,10 @@
-import { selectFilters } from "features/Filter/filter.slice";
-import { useSelector } from "react-redux";
+import { useFetchPositions } from "./hooks/useFetchPositions";
+import { usePositions } from "./hooks/usePositions";
 import { JobPosition } from "./JobPosition";
-import { selectFilteredPositions } from "./position.slice";
 
 const JobList = () => {
-  const filters = useSelector(selectFilters);
-  const positions = useSelector((state) =>
-    selectFilteredPositions(state, filters)
-  );
+  useFetchPositions();
+  const positions = usePositions();
 
   return (
     <div className="job-list">
