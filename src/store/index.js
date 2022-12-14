@@ -1,12 +1,10 @@
-import { createStore } from "redux";
-import { persistReducer, persistStore } from "redux-persist";
-import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
-import { rootReducers } from "./root.reducers";
+// import { persistReducer, persistStore } from "redux-persist";
+// import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
-const persistConfig = { key: "root", storage };
+// const persistConfig = { key: "root", storage };
 
-const persistedReducer = persistReducer(persistConfig, rootReducers);
+// const persistedReducer = persistReducer(persistConfig, rootReducers);
 
-export const store = createStore(persistedReducer);
+// export const store = createStore(persistedReducer);
 
-export const persistor = persistStore(store);
+// export const persistor = persistStore(store);

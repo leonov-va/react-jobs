@@ -1,7 +1,7 @@
+import { selectFilters } from "features/Filter/filter.slice";
 import { useSelector } from "react-redux";
-import { selectFilters } from "store/filter/filter.selectors";
-import { selectFilteredPositions } from "store/positions/positions.selectors";
 import { JobPosition } from "./JobPosition";
+import { selectFilteredPositions } from "./position.slice";
 
 const JobList = () => {
   const filters = useSelector(selectFilters);

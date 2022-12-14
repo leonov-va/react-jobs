@@ -1,6 +1,6 @@
+import { addFilter } from "features/Filter/filter.slice";
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
-import { addFilter } from "store/filter/filter.actions";
 import { Badge } from "UI/Badge";
 import { Card } from "UI/Card";
 import { Stack } from "UI/Stack";
